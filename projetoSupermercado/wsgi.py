@@ -1,5 +1,5 @@
 """
-WSGI config for ProjectDjango project.
+WSGI config for projetoSupermercado project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'ProjectDjango.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'projetoSupermercado.settings')
 
 application = get_wsgi_application()

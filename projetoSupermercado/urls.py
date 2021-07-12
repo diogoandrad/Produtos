@@ -1,4 +1,4 @@
-"""ProjectDjango URL Configuration
+"""projetoSupermercado URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/2.2/topics/http/urls/
@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from AppFirst.views import home, list, create, update, delete
+from appProdutos.views import home, list, create, update, delete
 
 urlpatterns = [
     path('admin/', admin.site.urls),
