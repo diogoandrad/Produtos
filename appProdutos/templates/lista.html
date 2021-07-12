@@ -31,15 +31,15 @@
           </thead>
           <tbody>
             <tr>
-                {% for transacao in transacoes %}
-              <td>{{ transacao.produto }}</td>
-              <td>{{ transacao.valor }}</td>
-              <td>{{ transacao.categoria }}</td>
-              <td>{{ transacao.observacoes }}</td>
-              <td>{{ transacao.data }}</td>
+                {% for produto in produtos %}
+              <td>{{ produto.produto }}</td>
+              <td>{{ produto.valor }}</td>
+              <td>{{ produto.categoria }}</td>
+              <td>{{ produto.observacoes }}</td>
+              <td>{{ produto.data }}</td>
               <td>
-                  <a type="button" class="btn btn-primary btn-sm" href="{% url 'url_update' transacao.id %}">Editar</a>
-                  <a type="button" class="btn btn-danger btn-sm" href="{% url 'url_delete' transacao.id %}">Deletar</a>
+                  <a type="button" class="btn btn-primary btn-sm" href="{% url 'url_update' produto.id %}">Editar</a>
+                  <a type="button" class="btn btn-danger btn-sm" href="{% url 'url_delete' produto.id %}">Deletar</a>
               </td>
             </tr>
                 {% endfor  %}

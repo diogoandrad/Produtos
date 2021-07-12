@@ -2,30 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ccb6a182-6406-40f1-b800-042c7073898b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/FirstProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/produtos.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppFirst/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/appProdutos/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppFirst/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/appProdutos/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppFirst/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/appProdutos/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppFirst/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/appProdutos/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppFirst/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/appProdutos/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppFirst/migrations/0002_transacao.py" beforeDir="false" afterPath="$PROJECT_DIR$/appProdutos/migrations/0002_transacao.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppFirst/migrations/0003_auto_20190716_2222.py" beforeDir="false" afterPath="$PROJECT_DIR$/appProdutos/migrations/0003_auto_20190716_2222.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppFirst/migrations/0004_auto_20190719_0042.py" beforeDir="false" afterPath="$PROJECT_DIR$/appProdutos/migrations/0004_auto_20190719_0042.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppFirst/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/appProdutos/migrations/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppFirst/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/appProdutos/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppFirst/templates/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/appProdutos/templates/form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppFirst/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/appProdutos/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppFirst/templates/lista.html" beforeDir="false" afterPath="$PROJECT_DIR$/appProdutos/templates/lista.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppFirst/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/appProdutos/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppFirst/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/appProdutos/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectDjango/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/projetoSupermercado/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectDjango/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/projetoSupermercado/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectDjango/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/projetoSupermercado/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectDjango/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/projetoSupermercado/wsgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appProdutos/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/appProdutos/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appProdutos/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/appProdutos/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appProdutos/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/appProdutos/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appProdutos/migrations/0002_transacao.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appProdutos/migrations/0003_auto_20190716_2222.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appProdutos/migrations/0004_auto_20190719_0042.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appProdutos/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/appProdutos/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appProdutos/templates/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/appProdutos/templates/form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appProdutos/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/appProdutos/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appProdutos/templates/lista.html" beforeDir="false" afterPath="$PROJECT_DIR$/appProdutos/templates/lista.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appProdutos/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/appProdutos/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,104 +84,6 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
-  </component>
-  <component name="RunManager">
-    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
-      <module name="produtos" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="Tox" factoryName="Tox">
-      <module name="produtos" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="docs" factoryName="Docutils task">
-      <module name="produtos" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="docutils_input_file" value="" />
-      <option name="docutils_output_file" value="" />
-      <option name="docutils_params" value="" />
-      <option name="docutils_task" value="" />
-      <option name="docutils_open_in_browser" value="false" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="docs" factoryName="Sphinx task">
-      <module name="produtos" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="docutils_input_file" value="" />
-      <option name="docutils_output_file" value="" />
-      <option name="docutils_params" value="" />
-      <option name="docutils_task" value="" />
-      <option name="docutils_open_in_browser" value="false" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Doctests">
-      <module name="produtos" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Unittests">
-      <module name="produtos" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">

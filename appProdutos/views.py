@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
-from .models import Transacao
-from .forms import TransacaoForm
+from .models import Produto
+from .forms import ProdutoForm
 import datetime
 
 def home(request):
@@ -10,11 +10,11 @@ def home(request):
     return render(request, 'home.html', data)
 
 def list(request):
-    transacoes = Transacao.objects.all()
-    return render(request, 'lista.html', {'transacoes': transacoes})
+    produtos = Produto.objects.all()
+    return render(request, 'lista.html', {'produtos': produtos})
 
 def create(request):
-    form = TransacaoForm(request.POST or None)
+    form = ProdutoForm(request.POST or None)
 
     if form.is_valid():
         form.save()
@@ -24,9 +24,9 @@ def create(request):
 
 def update(request, pk):
     data = {}
-    transacao = Transacao.objects.get(pk=pk)
-    data['transacao'] = transacao
-    form = TransacaoForm(request.POST or None, instance=transacao)
+    produto = Produto.objects.get(pk=pk)
+    data['produto'] = produto
+    form = ProdutoForm(request.POST or None, instance=produto)
     data['form'] = form
 
     if form.is_valid():
@@ -36,6 +36,6 @@ def update(request, pk):
     return render(request, 'form.html', data)
 
 def delete(request, pk):
-    transacao = Transacao.objects.get(pk=pk)
-    transacao.delete()
+    produto = Produto.objects.get(pk=pk)
+    produto.delete()
     return redirect('url_list')

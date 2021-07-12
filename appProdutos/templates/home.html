@@ -17,46 +17,6 @@
         </div>
     </div>
 
-    <div>
-        <p>
-            Neste meu primeiro projeto eu criei com instruções de um curso, um sistema com <strong>CRUD</strong> para listar
-            os produtos de um supermercado e colocar neles suas caracteristicas, como preço, observações e ect..
-            Então é um sistema simples para ampliar os conhecimentos com o framework django, que fui apresentado na
-            fábrica de software na faculdade. Entretando ao decorrer do tempo vou produzindo algo para o sistema
-            e vou melhorando o mesmo.
-        </p>
-        <p>
-            Por fim, nesse sistema eu vou criar as transacoes, cada uma dela vai ter suas caracteristicas, por exemplo,
-            cada transacao vai ter um produto com um preco com a data que foi postado com sua categoria, enfim, eu vou
-            coloca-los em uma lista que pode ser editada ou apagada por qualquer um que tenha acesso ao sistema, por enquanto,
-            porque esse é o primeiro projeto entao esse é basicamente para ter a ideia de o que é <strong>crud</strong>, eu posso criar os
-            produtos assim como posso le-los e upar e apaga-los. então de primeira essa foi uma boa ideia de iniciar uma
-            aplicacao feita em casa mesmo por mim.
-        </p>
-    </div>
-
-    <div>
-        <h4>Então, aqui está a definição de crud:</h4>
-        <ul>
-            {% for transacao in crud %}
-
-                {% if transacao == "Create" %}
-                    <li><b>{{ transacao }}</b></li>
-                {% else %}
-                    <li>{{ transacao }}</li>
-                {% endif %}
-
-            {% endfor %}
-        </ul>
-        <p>
-            Abaixo podemos ver um link que levará a listas dos produtos que foram criados, na pagina de lista tem dois
-            botoes, um para criar mais um produto e outro para voltar para a pagina inicial.. ainda na pagina lista,
-            podemos clicar no produto, para fazer alterações do mesmo, e assim mante-los sempre atualizados. Quando é
-            clicado em cada produtos, todos vao estar a mesma coisa so mudando de caracteristicas, porem todos iram ter
-            o link de delete, para tira-lo da lista de produtos e assim fechando a paravra crud.
-        </p>
-    </div>
-
     <div class="text-center">
         <a href="{% url 'url_list' %}">
             <button type="button" class="btn btn-secondary btn-sm">Lista de Produtos</button>
