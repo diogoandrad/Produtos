@@ -15,13 +15,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from AppFirst.views import home, lista, nova_transacao, update, delete
+from AppFirst.views import home, list, create, update, delete
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', home, name='url_login'),
-    path('read/', lista, name='url_lista'),
-    path('create/', nova_transacao, name='url_nova'),
+    path('', home, name='url_home'),
+    path('list/', list, name='url_list'),
+    path('create/', create, name='url_create'),
     path('update/<int:pk>', update, name='url_update'),
     path('delete/<int:pk>', delete, name='url_delete')
 ]

@@ -9,16 +9,16 @@ def home(request):
     data['crud'] = ['Create', 'Read', 'Update','Delete']
     return render(request, 'home.html', data)
 
-def lista(request):
+def list(request):
     transacoes = Transacao.objects.all()
     return render(request, 'lista.html', {'transacoes': transacoes})
 
-def nova_transacao(request):
+def create(request):
     form = TransacaoForm(request.POST or None)
 
     if form.is_valid():
         form.save()
-        return redirect('url_lista')
+        return redirect('url_list')
 
     return render(request, 'form.html', {'form': form})
 
@@ -31,11 +31,11 @@ def update(request, pk):
 
     if form.is_valid():
         form.save()
-        return redirect('url_lista')
+        return redirect('url_list')
 
     return render(request, 'form.html', data)
 
 def delete(request, pk):
     transacao = Transacao.objects.get(pk=pk)
     transacao.delete()
-    return redirect('url_lista')
+    return redirect('url_list')
