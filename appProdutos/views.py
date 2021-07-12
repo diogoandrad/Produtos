@@ -6,7 +6,6 @@ import datetime
 def home(request):
     data = {}
     data['now'] = datetime.datetime.now()
-    data['crud'] = ['Create', 'Read', 'Update','Delete']
     return render(request, 'home.html', data)
 
 def list(request):

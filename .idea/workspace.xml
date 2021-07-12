@@ -1,21 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ccb6a182-6406-40f1-b800-042c7073898b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appProdutos/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/appProdutos/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appProdutos/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/appProdutos/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appProdutos/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/appProdutos/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appProdutos/migrations/0002_transacao.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appProdutos/migrations/0003_auto_20190716_2222.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appProdutos/migrations/0004_auto_20190719_0042.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appProdutos/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/appProdutos/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appProdutos/templates/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/appProdutos/templates/form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appProdutos/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/appProdutos/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appProdutos/templates/lista.html" beforeDir="false" afterPath="$PROJECT_DIR$/appProdutos/templates/lista.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appProdutos/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/appProdutos/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-    </list>
+    <list default="true" id="ccb6a182-6406-40f1-b800-042c7073898b" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
