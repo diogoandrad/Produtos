@@ -1,3 +1,1 @@
-# Projeto cadastro de Produtos
-
-Project using Python, Django, Sqlite.
+# Projeto para gerenciamento de produtos
