@@ -10,7 +10,7 @@ def home(request):
 
 def list(request):
     produtos = Produto.objects.all()
-    return render(request, 'lista.html', {'produtos': produtos})
+    return render(request, 'list.html', {'produtos': produtos})
 
 def create(request):
     form = ProdutoForm(request.POST or None)

@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% block content %}
+
+  <div class="container-fluid">
+    <div class="text-center">
+      <h2>Lista de Produtos</h2>
+    </div>
+  </div>
+
+  <div class="text-center">
+    <br>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Produto</th>
+          <th>Valor</th>
+          <th>Categoria</th>
+          <th>Observação</th>
+          <th>Data</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for produto in produtos %}
+        <tr>
+          <td>{{ produto.nome }}</td>
+          <td>{{ produto.valor }}</td>
+          <td>{{ produto.categoria }}</td>
+          <td>{{ produto.observacoes }}</td>
+          <td>{{ produto.data }}</td>
+          <td>
+            <a type="button" class="btn btn-primary btn-sm" href="{% url 'url_update' produto.id %}">Editar</a>
+            <a type="button" class="btn btn-danger btn-sm" href="{% url 'url_delete' produto.id %}">Deletar</a>
+          </td>
+        </tr>
+        {% endfor  %}
+      </tbody>
+    </table>
+    <br>
+  </div>
+
+  <div class="text-center">
+    <a href="{% url 'url_create' %}">
+      <button type="button" class="btn btn-primary btn-sm">Cadastrar</button>
+    </a>
+    <br> <br>
+    <a href="{% url 'url_home' %}">
+      <button type="button" class="btn btn-secondary btn-sm">Página Inicial</button>
+    </a>
+  </div>
+
+{% endblock %}
