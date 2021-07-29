@@ -1,4 +1,4 @@
-{% extends 'base.html' %}
+{% extends '../base.html' %}
 {% load crispy_forms_tags %}
 {% block content %}
 
@@ -45,10 +45,8 @@
                     </div>
                 </div>
             </div>
-            {% comment %} {{ form.as_p|crispy }} {% endcomment %}
             <button type="submit" class="btn btn-success">Salvar</button>
         </form>
-        <br>
     </div>
 
 {% endblock %}

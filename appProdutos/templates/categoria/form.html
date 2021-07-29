@@ -1,0 +1,28 @@
+{% extends '../base.html' %}
+{% load crispy_forms_tags %}
+{% block content %}
+
+    <div class="text-center">
+        {% if categoria %}
+            <h2>Editar Categoria</h2>
+        {% else %}
+            <h2>Cadastrar Categoria</h2>
+        {% endif %}
+        <br>
+    </div>
+
+    <div class="text-center">
+        <form method="POST" autocomplete="off">
+            {% csrf_token %}
+            <div class="row">
+                <div class="col-12">
+                    <div class="form-group">
+                        {{ form.nome|as_crispy_field }}
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-success">Salvar</button>
+        </form>
+    </div>
+
+{% endblock %}

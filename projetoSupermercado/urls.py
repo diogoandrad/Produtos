@@ -1,27 +1,25 @@
-"""projetoSupermercado URL Configuration
-
-The `urlpatterns` list routes URLs to views. For more information please see:
-    https://docs.djangoproject.com/en/2.2/topics/http/urls/
-Examples:
-Function views
-    1. Add an import:  from my_app import views
-    2. Add a URL to urlpatterns:  path('', views.home, name='home')
-Class-based views
-    1. Add an import:  from other_app.views import Home
-    2. Add a URL to urlpatterns:  path('', Home.as_view(), name='home')
-Including another URLconf
-    1. Import the include() function: from django.urls import include, path
-    2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
-"""
 from django.contrib import admin
 from django.urls import path
-from appProdutos.views import home, list, create, update, delete
+from appProdutos.views import (home, 
+    listProduto, createProduto, updateProduto, deleteProduto, 
+    listCategoria, createCategoria, updateCategoria, deleteCategoria)
 
 urlpatterns = [
+    # Administrador
     path('admin/', admin.site.urls),
-    path('', home, name='url_home'),
-    path('list/', list, name='url_list'),
-    path('create/', create, name='url_create'),
-    path('update/<int:pk>', update, name='url_update'),
-    path('delete/<int:pk>', delete, name='url_delete')
+
+    # Página Inicial
+    path('', home, name='home'),
+
+    # Produtos
+    path('produtos/', listProduto, name='produto_list'),
+    path('produtos/create/', createProduto, name='produto_create'),
+    path('produtos/update/<int:pk>', updateProduto, name='produto_update'),
+    path('produtos/delete/<int:pk>', deleteProduto, name='produto_delete'),
+
+    # Categorias
+    path('categorias/', listCategoria, name='categoria_list'),
+    path('categorias/create/', createCategoria, name='categoria_create'),
+    path('categorias/update/<int:pk>', updateCategoria, name='categoria_update'),
+    path('categorias/delete/<int:pk>', deleteCategoria, name='categoria_delete')
 ]

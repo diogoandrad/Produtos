@@ -1,4 +1,4 @@
-{% extends 'base.html' %}
+{% extends '../base.html' %}
 {% block content %}
 
   <div class="container-fluid">
@@ -15,9 +15,9 @@
           <th>Produto</th>
           <th>Valor</th>
           <th>Categoria</th>
+          <th>Data Validade</th>
           <th>Observação</th>
-          <th>Data</th>
-          <th>Ações</th>
+          <th class="text-center">Ações</th>
         </tr>
       </thead>
       <tbody>
@@ -26,11 +26,11 @@
           <td>{{ produto.nome }}</td>
           <td>{{ produto.valor }}</td>
           <td>{{ produto.categoria }}</td>
+          <td>{{ produto.data | date:"d/m/Y" }}</td>
           <td>{{ produto.observacoes }}</td>
-          <td>{{ produto.data }}</td>
-          <td>
-            <a type="button" class="btn btn-primary btn-sm" href="{% url 'url_update' produto.id %}">Editar</a>
-            <a type="button" class="btn btn-danger btn-sm" href="{% url 'url_delete' produto.id %}">Deletar</a>
+          <td class="text-center">
+            <a type="button" class="btn btn-primary btn-sm" href="{% url 'produto_update' produto.id %}">Editar</a>
+            <a type="button" class="btn btn-danger btn-sm" href="{% url 'produto_delete' produto.id %}">Deletar</a>
           </td>
         </tr>
         {% endfor  %}
@@ -40,11 +40,11 @@
   </div>
 
   <div class="text-center">
-    <a href="{% url 'url_create' %}">
+    <a href="{% url 'produto_create' %}">
       <button type="button" class="btn btn-primary btn-sm">Cadastrar</button>
     </a>
     <br> <br>
-    <a href="{% url 'url_home' %}">
+    <a href="{% url 'home' %}">
       <button type="button" class="btn btn-secondary btn-sm">Página Inicial</button>
     </a>
   </div>

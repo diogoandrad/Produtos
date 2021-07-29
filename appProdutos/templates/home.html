@@ -5,12 +5,17 @@
         <div class="text-center">
             <h2>Bem vindo ao projeto Supermercado!</h2>
             <h4>{{ now }}</h4>
+            <br>
         </div>
     </div>
 
     <div class="text-center">
-        <a href="{% url 'url_list' %}">
+        <a href="{% url 'produto_list' %}">
             <button type="button" class="btn btn-secondary btn-sm">Lista de Produtos</button>
+        </a>
+        <br> <br>
+        <a href="{% url 'categoria_list' %}">
+            <button type="button" class="btn btn-secondary btn-sm">Lista de Categorias</button>
         </a>
     </div>
 

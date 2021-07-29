@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
-from .models import Produto
-from .forms import ProdutoForm
+from .models import Categoria, Produto
+from .forms import CategoriaForm, ProdutoForm
 import datetime
 
 def home(request):
@@ -8,20 +8,22 @@ def home(request):
     data['now'] = datetime.datetime.now()
     return render(request, 'home.html', data)
 
-def list(request):
-    produtos = Produto.objects.all()
-    return render(request, 'list.html', {'produtos': produtos})
+# Gerenciamento dos Produtos
 
-def create(request):
+def listProduto(request):
+    produtos = Produto.objects.all()
+    return render(request, 'produto/list.html', {'produtos': produtos})
+
+def createProduto(request):
     form = ProdutoForm(request.POST or None)
 
     if form.is_valid():
         form.save()
-        return redirect('url_list')
+        return redirect('produto_list')
 
-    return render(request, 'form.html', {'form': form})
+    return render(request, 'produto/form.html', {'form': form})
 
-def update(request, pk):
+def updateProduto(request, pk):
     data = {}
     produto = Produto.objects.get(pk=pk)
     data['produto'] = produto
@@ -30,11 +32,44 @@ def update(request, pk):
 
     if form.is_valid():
         form.save()
-        return redirect('url_list')
+        return redirect('produto_list')
 
-    return render(request, 'form.html', data)
+    return render(request, 'produto/form.html', data)
 
-def delete(request, pk):
+def deleteProduto(request, pk):
     produto = Produto.objects.get(pk=pk)
     produto.delete()
-    return redirect('url_list')
+    return redirect('produto_list')
+
+# Gerenciamento das Categorias
+
+def listCategoria(request):
+    categorias = Categoria.objects.all()
+    return render(request, 'categoria/list.html', {'categorias': categorias})
+
+def createCategoria(request):
+    form = CategoriaForm(request.POST or None)
+
+    if form.is_valid():
+        form.save()
+        return redirect('categoria_list')
+
+    return render(request, 'categoria/form.html', {'form': form})
+
+def updateCategoria(request, pk):
+    data = {}
+    categoria = Categoria.objects.get(pk=pk)
+    data['categoria'] = categoria
+    form = CategoriaForm(request.POST or None, instance=categoria)
+    data['form'] = form
+
+    if form.is_valid():
+        form.save()
+        return redirect('categoria_list')
+
+    return render(request, 'categoria/form.html', data)
+
+def deleteCategoria(request, pk):
+    categoria = Categoria.objects.get(pk=pk)
+    categoria.delete()
+    return redirect('categoria_list')

@@ -1,0 +1,44 @@
+{% extends '../base.html' %}
+{% block content %}
+
+  <div class="container-fluid">
+    <div class="text-center">
+      <h2>Lista de Categorias</h2>
+    </div>
+  </div>
+
+  <div class="text-center">
+    <br>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Categoria</th>
+          <th class="text-center">Ações</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for categoria in categorias %}
+        <tr>
+          <td>{{ categoria.nome }}</td>
+          <td class="text-center">
+            <a type="button" class="btn btn-primary btn-sm" href="{% url 'categoria_update' categoria.id %}">Editar</a>
+            <a type="button" class="btn btn-danger btn-sm" href="{% url 'categoria_delete' categoria.id %}">Deletar</a>
+          </td>
+        </tr>
+        {% endfor  %}
+      </tbody>
+    </table>
+    <br>
+  </div>
+
+  <div class="text-center">
+    <a href="{% url 'categoria_create' %}">
+      <button type="button" class="btn btn-primary btn-sm">Cadastrar</button>
+    </a>
+    <br> <br>
+    <a href="{% url 'home' %}">
+      <button type="button" class="btn btn-secondary btn-sm">Página Inicial</button>
+    </a>
+  </div>
+
+{% endblock %}
