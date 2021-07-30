@@ -2,16 +2,16 @@
 
 ## Tecnologias
 
-    * Python
-    * Django
-    * Sqlite
-    * Html5
-    * Bootstrap4
+* Python
+* Django
+* Sqlite
+* Html5
+* Bootstrap4
     
 ## Pré-requisitos
 
-    * Python
-    * Django
+* Python
+* Django
 
 ## Instalação
 
@@ -20,11 +20,11 @@
 	Ativar a enviroment criada:
 		--> nomeDaEnviroment/Scripts/activate
 	Instalar o requirements.txt:
-	  --> pip install -r requirements.txt
+		--> pip install -r requirements.txt
 	Atualizar as migrações do banco de dados:
-	  --> python manage.py makemigrations
+		--> python manage.py makemigrations
 	Construir o banco de dados da aplicação:
-	  --> python manage.py migrate
+		--> python manage.py migrate
 
 ## Execução
 
@@ -37,4 +37,4 @@
 
 ## Autor
 
-    Diogo Alves de Andrade - Engenheiro de Software
+	Diogo Alves de Andrade - Engenheiro de Software
