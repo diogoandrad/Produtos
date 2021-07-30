@@ -24,7 +24,7 @@ SECRET_KEY = 'pv*(=j6fcdk3h9ndar(0&2%$z$^30yht_+47b+-c)+3mlc@y@='
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost', '127.0.0.1']
 
 # Application definition
 INSTALLED_APPS = [
@@ -53,7 +53,7 @@ ROOT_URLCONF = 'projetoSupermercado.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
